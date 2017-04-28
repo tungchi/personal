@@ -1,0 +1,10 @@
+                                              spring - mybatis problem 
+                                              
+                                             
+1.problem1:org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: Error instantiating class 
+com.runlion.etl.entity.finance.loan.LoanApplyFail with invalid types () or values (). 
+Cause: java.lang.NoSuchMethodException: com.runlion.etl.entity.finance.loan.LoanApplyFail.<init>()
+
+cause problem:返回结果的实体类里必须要有无参构造函数.
+
+2.TODO
